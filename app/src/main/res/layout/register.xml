@@ -7,12 +7,25 @@
     android:layout_height="match_parent"
     >
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/lock_icon"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center_horizontal"
+
+        android:contentDescription="TODO"
+        tools:ignore="VectorDrawableCompat" />
 
 
     <EditText
         android:id="@+id/emailEditText"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="35dp"
         android:hint="Your Email"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -20,32 +33,41 @@
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Your Password"
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <EditText
         android:id="@+id/repeatPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="8dp"
         android:hint="Confirm your Password"
         android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+         />
 
     <Button
         android:id="@+id/loginSignUpButton"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginTop="30dp"
         android:text="Sign Up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="20sp"
+        android:layout_width="250dp"
+        android:layout_height="65dp"/>
 
     <TextView
         android:id="@+id/toggleLoginSignUpTextView"
         android:text="Tap to Log In"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:textSize="16sp"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
         android:onClick="toggleLoginMode"
         android:clickable="true"
         android:layout_width="wrap_content"
