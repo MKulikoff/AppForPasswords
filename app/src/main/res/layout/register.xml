@@ -63,7 +63,7 @@
 
     <TextView
         android:id="@+id/toggleLoginSignUpTextView"
-        android:text="Tap to Log In"
+        android:text="Or, tap to Log In"
         android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="18dp"
